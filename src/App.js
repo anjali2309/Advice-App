@@ -1,4 +1,3 @@
-//import axios from 'axios';
 import { useEffect, useState } from 'react';
 
 const App = () => {
@@ -15,6 +14,7 @@ const App = () => {
     }
   }
 
+  useEffect(()=>{fetchAdvice()}, []);
   return (
     <div className="App">
       <div className="card">
